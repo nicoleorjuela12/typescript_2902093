@@ -141,3 +141,14 @@ const eliminarEstudiantesEdads = (edad: number | string) => {
 eliminarEstudiantesEdads(54)
 
 console.log(estudiantes);
+
+
+
+const buscarEstudiante = (nombre: string) => {
+    const estudiante = estudiantes.find(estudiante => estudiante.fistName === nombre)
+    if(estudiante){
+        estudiante.lastName="Gomez"
+    }
+}
+
+buscarEstudiante ("Carlos");
